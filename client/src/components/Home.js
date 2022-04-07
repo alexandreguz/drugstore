@@ -16,30 +16,30 @@ const Home = () => {
                 console.log(e)
             })
 
-    }, []); 
- 
-    return ( 
-        <>
-          <main>
-            <h2>Pharmaceutical Companies</h2>
-            <p></p>
-          </main>
-          <nav>
-            <Link to="/medicine">Medicine</Link>
-          </nav>
+    }, []);
 
-          <ul>
-                    {companies.map(company => (
-                        <li                           
-                            key={company.id}>
-                            {company.brandName}
-                        </li>
-                    ))}
-                </ul>
+    return (
+        <>
+            <main>
+                <h2>Pharmaceutical Companies</h2>
+                <p></p>
+            </main>
+            <nav>
+                <Link to="/medicine">Medicine</Link>
+            </nav>
+
+            <ul>
+                {companies.map(company => (
+                    <li
+                        key={company.id}>
+                        {company.brandName}
+                    </li>
+                ))}
+            </ul>
 
 
         </>
-      );
+    );
 }
 
 export default Home
