@@ -7,7 +7,7 @@ const getAll =  async() => {
     }
     try {
         let res = await connection.promise().query(
-            'select * from pharmaceuticalCompanies'
+            'select brandName from pharmaceuticalCompanies'
         )
 
         console.log(res)
